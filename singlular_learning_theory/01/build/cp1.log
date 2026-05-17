@@ -1,7 +1,7 @@
-This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.6.24)  16 MAY 2026 19:06
+This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.6.24)  17 MAY 2026 17:40
  restricted system commands enabled.
-**test.tex
-(./test.tex
+**cp1.tex
+(./cp1.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
@@ -1301,8 +1301,8 @@ y)
 (/usr/local/texlive/2025/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.
 sty))
 (/usr/local/texlive/2025/texmf-dist/tex/latex/beamer/beamercolorthemeseahorse.s
-ty) (./build/test.aux)
-\openout1 = test.aux
+ty) (./build/cp1.aux)
+\openout1 = cp1.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
@@ -1387,10 +1387,10 @@ e
 ))
 Package hyperref Info: Link coloring OFF on input line 20.
 
-(./build/test.out) (./build/test.out)
+(./build/cp1.out) (./build/cp1.out)
 \@outlinefile=\write5
 
-\openout5 = test.out
+\openout5 = cp1.out
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 20.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
@@ -1524,7 +1524,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  TU/lmss/b/n --> TU/lmss/b/n on input line 20.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  TU/lmtt/b/n --> TU/lmtt/b/n on input line 20.
- (./build/test.nav)(load cache: extra_lmsans8-regular.luc)
+ (./build/cp1.nav)(load cache: extra_lmsans8-regular.luc)
 LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
 (Font)              scaled to size 5.77332pt on input line 20.
@@ -1555,145 +1555,232 @@ LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 [1
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./build/test.toc)
+(./build/cp1.toc)
 
 [2
 
-] (./build/test.toc)
+] (./build/cp1.toc)
 
 [3
 
 ](load cache: extra_lmroman8-regular.luc)(load cache: extra_lmroman6-regular.luc
 )
-LaTeX Font Info:    Trying loading font information for U+msa on input line 36.
+LaTeX Font Info:    Trying loading font information for U+msa on input line 34.
 
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying loading font information for U+msb on input line 36.
+LaTeX Font Info:    Trying loading font information for U+msb on input line 34.
 
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 36.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 34.
 (load cache: extra_lmsans10-oblique.luc)
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 36.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 34.
 (load cache: extra_lmsans8-oblique.luc)
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 36.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 34.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/b/n' will be
 
-(Font)              scaled to size 10.53629pt on input line 36.
+(Font)              scaled to size 10.53629pt on input line 34.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/b/n' will be
 
-(Font)              scaled to size 7.69775pt on input line 36.
+(Font)              scaled to size 7.69775pt on input line 34.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/b/n' will be
 
-(Font)              scaled to size 5.77332pt on input line 36.
+(Font)              scaled to size 5.77332pt on input line 34.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <10.95> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 36.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 34.
 (load cache: extra_lmsans10-boldoblique.luc)
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <8> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 36.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 34.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <6> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 36.
-
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 34.
+(load cache: extra_lmromandemi10-regular.luc)
 
 [4
 
 ]
 
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.41 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.41 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.41 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
 [5
 
-] (./build/test.toc)
+]
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.47 \end{frame}
+                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
 
 [6
 
-]
+] (./build/cp1.toc)
 
 [7
 
-] (./build/test.toc)
-
-[8
-
 ]
-<figures/fig_1_1.png, id=306, 414.8298pt x 326.6604pt>
+<figures/fig_1_1.png, id=276, 414.8298pt x 326.6604pt>
 File: figures/fig_1_1.png Graphic file (type png)
 <use figures/fig_1_1.png>
-Package luatex.def Info: figures/fig_1_1.png  used on input line 65.
+Package luatex.def Info: figures/fig_1_1.png  used on input line 58.
 (luatex.def)             Requested size: 231.83469pt x 182.55972pt.
 LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 9.6222pt on input line 65.
+(Font)              scaled to size 9.6222pt on input line 58.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 9.6222pt on input line 65.
+(Font)              scaled to size 9.6222pt on input line 58.
 
-Overfull \vbox (8.22508pt too high) detected at line 65
+Overfull \vbox (8.22508pt too high) detected at line 58
  []
 
 
 
+[8
+
+<./figures/fig_1_1.png>] (./build/cp1.toc)
+
 [9
 
-<./figures/fig_1_1.png>] (./build/test.toc)
+]
 
 [10
 
-]
+] (./build/cp1.toc)
 
 [11
 
 ]
+File: figures/fig_1_1.png Graphic file (type png)
+<use figures/fig_1_1.png>
+Package luatex.def Info: figures/fig_1_1.png  used on input line 85.
+(luatex.def)             Requested size: 231.83469pt x 182.55972pt.
+LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/b/n' will be
+
+(Font)              scaled to size 10.53629pt on input line 85.
+
+
+[12
+
+]
 \tf@nav=\write6
 
-\openout6 = test.nav
+\openout6 = cp1.nav
 \tf@toc=\write7
 
-\openout7 = test.toc
+\openout7 = cp1.toc
 \tf@snm=\write8
 
-\openout8 = test.snm
- (./build/test.aux)
+\openout8 = cp1.snm
+ (./build/cp1.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `test.out' has not changed.
-(rerunfilecheck)             Checksum: 3967B7281CF4343463CFA73727CB26AE;276.
+Package rerunfilecheck Info: File `cp1.out' has not changed.
+(rerunfilecheck)             Checksum: 3E713138588422B75D1AE5760C2B07C3;308.
 )
 
 Here is how much of LuaTeX's memory you used:
- 29837 strings out of 475506
+ 29857 strings out of 475506
  125244,1144653 words of node,token memory allocated
- 8760 words of node memory still in use:
-   37 hlist, 9 vlist, 46 rule, 4 local_par, 2 math, 92 glue, 8 kern, 21 penalty,
- 39 glyph, 2814 attribute, 61 glue_spec, 292 attribute_list, 4 write, 43 user_de
-fined, 1 pdf_literal, 26 pdf_colorstack nodes
-   avail lists: 1:19,2:8330,3:499,4:748,5:151,6:54,7:803,8:21,9:609,10:32,11:3
- 51863 multiletter control sequences out of 65536+600000
- 78 fonts using 76521711 bytes
- 128i,15n,122p,1908b,818s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans8-oblique.otf
-></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans10-oblique.o
-tf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regula
-r.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans8-regul
-ar.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans10-reg
-ular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/Har
-anoAjiMincho-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb>
-Output written on test.pdf (11 pages, 117904 bytes).
+ 11637 words of node memory still in use:
+   60 hlist, 11 vlist, 42 rule, 9 local_par, 121 glue, 11 kern, 33 penalty, 38 g
+lyph, 3827 attribute, 61 glue_spec, 401 attribute_list, 4 write, 64 user_defined
+, 25 pdf_literal, 30 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore 
+nodes
+   avail lists: 1:19,2:7352,3:460,4:723,5:154,6:53,7:794,8:29,9:600,10:20,11:3
+ 51878 multiletter control sequences out of 65536+600000
+ 81 fonts using 76916839 bytes
+ 128i,15n,122p,1907b,843s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGot
+hic-Medium.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmro
+mandemi10-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/
+lm/lmsans8-oblique.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public
+/lm/lmsans10-oblique.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/publ
+ic/lm/lmsans8-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/pub
+lic/lm/lmsans10-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/p
+ublic/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2025/texmf-dist/
+fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2025/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy8.pfb>
+Output written on cp1.pdf (12 pages, 149256 bytes).
 
-PDF statistics: 451 PDF objects out of 1000 (max. 8388607)
- 382 compressed objects within 4 object streams
- 27 named destinations out of 1000 (max. 131072)
+PDF statistics: 499 PDF objects out of 1000 (max. 8388607)
+ 421 compressed objects within 5 object streams
+ 29 named destinations out of 1000 (max. 131072)
  138 words of extra memory for PDF output out of 10000 (max. 100000000)
 
