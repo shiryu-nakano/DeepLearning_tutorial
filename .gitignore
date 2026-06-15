@@ -1,0 +1,15 @@
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+
+*.gz
+.DS_Store
+
+
+./sin
+
+tensorflow_tutorial/__pycache__/
+tensorflow_tutorial/tensorflow_datasets/
