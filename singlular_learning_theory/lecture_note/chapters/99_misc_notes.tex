@@ -1,0 +1,46 @@
+\section{雑多なメモ}
+
+\[
+\boxed{\;\mathbf{W} = (\mathbf{X}^{T}\mathbf{X})^{-1}\mathbf{X}^{T}\mathbf{Y}\;}
+\]
+
+逆温度\({\beta}\) の，パラメータの事後分布は，
+
+$$p(w|X^n) = \frac{1}{Z_n(\beta)}\phi(w)\Pi_{i=1}^{N}p(X_i|w)^{\beta} $$
+$$p(w \mid X^n) = \frac{1}{Z_n(\beta)}\, \phi(w) \prod_{i=1}^{N} p(X_i \mid w)^{\beta}$$
+
+ここで\({Z_n(\beta)}\) は分配関数
+
+$$Z_n(\beta) = \int \phi(w) \prod_{i=1}^{N} p(X_i \mid w)^{\beta} \, dw$$
+\({Z_n(1)}\) は周辺尤度
+
+
+分配関数（正規化定数）
+
+\({Z_n(\beta) = \int_{W} \phi(w) \prod_{i=1}^{N} p(X_i \mid w)^{\beta} dw}\)
+予測分布は，確率モデルを事後分布によって平均化したものである（？→後で確かめてみるか）
+
+\subsection{W bayes cp2}
+
+\subsubsection{概要}
+
+\begin{itemize}
+\item 真の分布と確率モデルの実現可能性
+\begin{itemize}
+\item 具体例付き
+\end{itemize}
+\item 平均対数損失関数の定義
+\item 最適なパラメータの集合の定義
+\begin{itemize}
+\item 補題2
+\begin{itemize}
+\item 2-1：最適なパラメータ集合の要素は1つとは限らない
+
+\item 2-2：最適なパラメータ集合ないのパラメータによって決まる確率モデルはすべて同じとは限らない
+\end{itemize}
+\end{itemize}
+
+\item 実質的にユニーク（定義)
+\end{itemize}
+
+\({p(x \mid w)}\) に対して，真のパラメータ集合 \({W_{0}}\)

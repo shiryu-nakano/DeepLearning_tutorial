@@ -2,10 +2,4 @@
 
 
 
-
-
-## LOG
-<details>
-<summary>summary</summary>
-勉強した記録をメモしておく
-</details>
+[MCMCの勉強](./bayes_mcmc/README.md)

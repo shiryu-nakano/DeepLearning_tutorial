@@ -1,12 +1,15 @@
 [project]
-name = "tensorflow-tutorial"
+name = "experiments"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "importlib-resources>=7.1.0",
+    "arviz>=1.2.0",
+    "ipympl>=0.10.0",
     "matplotlib>=3.11.0",
-    "tensorflow>=2.21.0",
-    "tensorflow-datasets>=4.9.10",
+    "numpy>=2.4.6",
+    "pymc>=6.0.1",
+    "scipy>=1.17.1",
+    "seaborn>=0.13.2",
 ]

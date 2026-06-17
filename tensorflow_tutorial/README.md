@@ -1,5 +1,5 @@
 
-##　仮想環境構築（uv）
+##　仮想環境構築と実行（uv）
 
 ```
 cd tensorflow_tutorial
@@ -15,9 +15,10 @@ uv add importlib-resources
 uv run python down_load_cifar10.py
 # もしくは以下でactivateしてからじっこうしても同じ
 source .venv/bin/activate
-python down_load_cifar10.py
-
+python <script>.py
 
 ```
 
-
+- [CIFAR10のダウンロード](./down_load_cifar10.py)
+  - [メモ](./docs/down_load_cifar10.md)
+- 

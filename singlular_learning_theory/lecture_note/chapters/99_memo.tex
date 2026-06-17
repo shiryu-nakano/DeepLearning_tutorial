@@ -1,0 +1,19 @@
+\section{めも}
+latexが複雑になってしまう場合はgithubで管理すれば良い→リンクを後でここに貼る
+
+\begin{verbatim}
+M-: (setq org-format-latex-options (plist-put org-format-latex-options :scale 0.5))
+
+そうです。カーソル位置の数式1つだけです。
+
+**スコープまとめ：**
+
+| キー | 範囲 |
+|------|------|
+| `C-c C-x C-l` | カーソル位置の数式1つ |
+| `C-u C-c C-x C-l` | **セクション内**の全数式 |
+| `C-u C-u C-c C-x C-l` | **バッファ全体**の全数式 |
+
+スケールを変えた後は `C-u C-u C-c C-x C-l` でバッファ全体に一括適用するのが楽です。
+
+\end{verbatim}
