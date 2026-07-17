@@ -1,0 +1,188 @@
+% !TEX program = lualatex
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{luatexja}        % LuaLaTeX で日本語を扱う
+\usepackage{geometry}
+\geometry{margin=25mm}
+
+% --- tcolorbox の読み込み ---
+\usepackage[many]{tcolorbox}
+
+% --- 定理型環境の設定 (amsthm) ---
+\theoremstyle{definition}
+\newtheorem{definition}{定義}
+\newtheorem{example}{例}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{定理}
+\newtheorem{proposition}{命題}
+\newtheorem{lemma}{補題}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{注意}
+
+% --- tcolorbox による囲み枠の設定（白黒スタイル） ---
+
+% 基本の白黒枠スタイル（背景白，枠線黒）
+\tcbset{
+  bwbox/.style={
+    enhanced,
+    colback=white,
+    colframe=black,
+    boxrule=0.8pt,     % 基本の枠線の太さ
+    arc=1mm,           % 少しだけ角を丸くして柔らかさを出す
+    breakable,         % ページ跨ぎ対応
+    before skip=10pt,
+    after skip=10pt
+  }
+}
+
+% 定義・命題・補題には基本の黒枠を適用
+\tcolorboxenvironment{definition}{bwbox}
+\tcolorboxenvironment{proposition}{bwbox}
+\tcolorboxenvironment{lemma}{bwbox}
+
+% 定理は重要度を上げるため，少し枠線を太くする
+\tcolorboxenvironment{theorem}{bwbox, boxrule=1.5pt}
+
+% 例：左側にのみ中くらいの濃さのグレー線を引く
+\tcolorboxenvironment{example}{
+  blanker, borderline west={2pt}{0pt}{black!60}, 
+  left=10pt, breakable, before skip=10pt, after skip=10pt
+}
+
+% 注意：左側にのみ薄いグレー線を引く
+\tcolorboxenvironment{remark}{
+  blanker, borderline west={2pt}{0pt}{black!30}, 
+  left=10pt, breakable, before skip=10pt, after skip=10pt
+}
+
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\rank}{\operatorname{rank}}
+
+\title{固有値・固有ベクトル}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+
+\begin{definition}[固有値・固有ベクトル]
+$n$ 次正方行列 $A$ に対して，
+\begin{equation}
+    A\mathbf{x} = \lambda \mathbf{x} \tag{$\ast$}\label{eq:eigen}
+\end{equation}
+を満たす $n$ 次元ベクトル $\mathbf{x} \neq 0$ と $\lambda \in \R$ が存在するとき，
+$\mathbf{x}$ を $A$ の\textbf{固有ベクトル}，$\lambda$ を $A$ の\textbf{固有値}という.
+\end{definition}
+
+
+
+定義の条件 \eqref{eq:eigen} は，次のように同値変形される.
+\begin{align}
+  A\mathbf{x} &= \lambda \mathbf{x} \tag{$\ast$} \\
+  A\mathbf{x} - \lambda \mathbf{x} &= 0 \tag{$\ast_1$} \\
+  (A - \lambda E)\mathbf{x} &= 0 \tag{$\ast_2$}
+\end{align}
+ここで $E$ は $n$ 次単位行列である.これにより，固有値および固有ベクトルを求める問題は，次のように言い換えられる．
+
+\if0
+\begin{center}
+\fbox{\parbox{0.86\linewidth}{\centering
+$\lambda$ を固定したとき，$(A - \lambda E)\mathbf{x} = 0$ を満たす\\
+\textbf{自明でない解} $\mathbf{x} \neq 0$ が存在するような $\lambda$ を求めよ.}}
+\end{center}
+\fi
+
+- 非自明解の存在と行列式
+
+正方行列の正則性に関して，以下の同値性が成り立つ.
+
+\begin{lemma}\label{lem:reg}
+$n$ 次正方行列 $B$ に対して，次は互いに同値である.
+\[
+  B \text{ は正則}
+  \iff \det B \neq 0
+  \iff \ker B = \{0\}
+  \iff \rank B = n.
+\]
+\end{lemma}
+
+補題 \ref{lem:reg} を $B = A - \lambda E$ に適用することで，次の定理を得る.
+
+\begin{theorem}[固有方程式]\label{thm:char}
+$\lambda \in \R$ を固定する.このとき，次が成り立つ．
+\[
+  \bigl[\,(A - \lambda E)\mathbf{x} = 0 \text{ を満たす } \mathbf{x} \neq 0 \text{ が存在する}\,\bigr]
+  \iff
+  \det(A - \lambda E) = 0.
+\]
+$\lambda$ についての方程式
+\begin{equation}
+  \det(A - \lambda E) = 0 \tag{$\bigstar$}\label{eq:char}
+\end{equation}
+を $A$ の\textbf{固有方程式}（または特性方程式）とよぶ.
+\end{theorem}
+
+\begin{proof}
+$B = A - \lambda E$ とおく.
+
+\medskip
+\noindent\textbf{($\Rightarrow$)}\quad
+対偶を示す.$\det B \neq 0$ とすると，補題 \ref{lem:reg} より $B$ は正則である．方程式 $B\mathbf{x} = 0$ の両辺に左から $B^{-1}$ を掛けると $\mathbf{x} = 0$ となり，自明でない解 $\mathbf{x} \neq 0$ は存在しない．
+
+\medskip
+\noindent\textbf{($\Leftarrow$)}\quad
+$\det B = 0$ とすると，補題 \ref{lem:reg} より $\ker B \neq \{0\}$ である.すなわち $\dim \ker B \geq 1$ であり，$B\mathbf{x} = 0$ を満たす $\mathbf{x} \neq 0$ が存在する．
+\end{proof}
+
+\begin{remark}
+定理 \ref{thm:char} により，行列 $A$ の固有値を求める問題は，$\lambda$ の方程式 $\det(A - \lambda E) = 0$ を解く問題に完全に帰着される.
+\end{remark}
+
+\section{スカラーの範囲：実数解であることの必要性}
+
+定理 \ref{thm:char} により固有値の探索は固有方程式に帰着されたが，本稿ではスカラー場を実数体 $\R$ としているため，解の存在範囲に注意を要する.
+
+\begin{proposition}[$\R$ 上での存在条件]
+$\lambda \in \R$ が $A$ の固有値であるための必要十分条件は，以下の2条件をともに満たすことである.
+\begin{enumerate}
+  \item $\det(A - \lambda E) = 0$ （固有方程式を満たす）
+  \item $\lambda \in \R$ （解が実数である）
+\end{enumerate}
+\end{proposition}
+
+固有方程式 \eqref{eq:char} は $\lambda$ に関する実係数 $n$ 次多項式（固有多項式）を $0$ とおいた方程式であるが，その解が実数となる保証はない.複素数解しかもたない場合，$\R^n$ においては対応する固有ベクトルが存在しないため，$\R$ 上の線形空間としては「固有値をもたない」こととなる．
+
+\begin{example}[実固有値をもたない行列]
+回転行列
+\[
+  A = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}
+\]
+を考える.固有方程式は
+\[
+  \det(A - \lambda E)
+  = \det\begin{pmatrix} -\lambda & -1 \\ 1 & -\lambda \end{pmatrix}
+  = \lambda^2 + 1 = 0
+\]
+となり，その解は $\lambda = \pm i$ であるため実数解をもたない.幾何学的には，行列 $A$ は $\R^2$ 上の $90^\circ$ 回転を表すため，変換前後で方向が平行となる非零ベクトルは存在しない．したがって，$A$ は実数の固有値および実固有ベクトルをもたない．
+\end{example}
+
+\begin{remark}[$\R$ と $\C$ の違い]
+基礎体を複素数体 $\C$ とした場合，代数学の基本定理により $n$ 次固有多項式は $\C$ 上に必ず $n$ 個の根（重複度を含む）をもつため，固有値は常に存在する.
+\end{remark}
+
+\section{まとめ}
+
+以上の議論から，実正方行列 $A$ の実数体 $\R$ 上での固有値および固有ベクトルを求める手順は以下のようになる.
+\begin{enumerate}
+  \item 固有方程式 $\det(A - \lambda E) = 0$ を $\lambda$ について解く.
+  \item 得られた解のうち，\textbf{実数であるもの} $\lambda$ が固有値である．
+  \item 各固有値 $\lambda$ に対して連立一次方程式 $(A - \lambda E)\mathbf{x} = 0$ を解き，自明でない解 $\mathbf{x} \neq 0$ を固有ベクトルとして求める.
+\end{enumerate}
+
+\end{document}end{document}end{document}end{document}
