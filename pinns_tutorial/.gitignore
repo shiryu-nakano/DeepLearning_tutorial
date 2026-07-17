@@ -1,0 +1,17 @@
+# environment
+.venv/
+__pycache__/
+*.pyc
+
+# regeneratable outputs (raw sweep data can be large; regenerate via run_sweep.py)
+results/sweep_results/*.npz
+results/sweep_results/*.pt
+results/*.pt
+
+# keep summary.csv and json configs — small, and useful for provenance without rerunning
+!results/sweep_results/*.json
+!results/sweep_results/summary.csv
+
+# OS / editor cruft
+.DS_Store
+.ipynb_checkpoints/
