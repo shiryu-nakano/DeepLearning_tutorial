@@ -1,0 +1,9 @@
+[project]
+name = "sacred-tutorial"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.10"
+dependencies = [
+    "sacred==0.8.5",
+    "setuptools>=80.10.2",
+]

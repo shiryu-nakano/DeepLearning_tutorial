@@ -1,0 +1,6 @@
+INFO - tutorial - Running command 'run'
+INFO - tutorial - Started run with ID "1"
+Step 0: loss=1.0000, message=world
+Step 1: loss=0.5000, message=world
+Step 2: loss=0.3333, message=world
+INFO - tutorial - Completed after 0:00:00
